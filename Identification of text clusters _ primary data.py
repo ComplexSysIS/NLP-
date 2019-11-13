@@ -493,7 +493,7 @@ rulevecs = []
 #input_files = glob.glob('*.csv')
 input_files = ['diary_even_vectors_allwords2_tsne_11_11.txt']
 for infilename in input_files:
-    outfilename = infilename.replace('.txt','_divk.txt')
+    outfilename = infilename.replace('.txt','_final.txt')
 
     rulelabel, rulevecs_std, rulevecs_orig = obtain_data(infilename)
     k,hindex = determine_k(rulevecs_std,len(rulelabel))
